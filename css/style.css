@@ -30,3 +30,80 @@ div, header, footer, aside, section {
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+@import 'https://fonts.googleapis.com/css?family=Exo+2';
+
+body {
+	font-family: 'Exo 2', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* FONTS */
+
+
+/* MENU */
+nav {
+	background-color: rgba(50, 215, 212, 0.75);
+	width: 100%;
+}
+
+ul {
+	height: 8vh;
+	width: 83%;
+	margin: auto;
+	text-decoration: none;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+li {
+	font-size: 3em;
+	list-style-type: none;
+}
+
+.menu_button {
+	color: rgb(22, 92, 164);
+}
+
+.fa-user:before, .fa-upload:before {
+	font-size: 3em;
+	color: rgb(22, 92, 164);
+}
+
+/* BANNIERE PROMO */
+
+.promo {
+	width: 100%;
+	background-color: rgb(250, 145, 94);
+	height: 22vh;
+}
+
+.promo_text {
+	color: rgb(22, 92, 164);
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+.fa-shopping-cart:before {
+	font-size: 1.5em;
+}
+
+.panier {
+	width: 13%;
+	height: 26%;
+	float: right;
+	color: white;
+	text-align: center;
+	font-size: 2em;
+	background-color: rgb(22, 92, 164);
+}
+
+.cart {
+	text-decoration: none;
+	color: white;
+}
