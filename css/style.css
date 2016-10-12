@@ -31,7 +31,7 @@ div, header, footer, aside, section {
   box-sizing: border-box;
 }
 
-@import 'https://fonts.googleapis.com/css?family=Exo+2';
+
 
 body {
 	font-family: 'Exo 2', sans-serif;
@@ -85,15 +85,19 @@ li {
 
 .promo_text {
 	color: rgb(22, 92, 164);
-	font-size: 2.5em;
+	width: 41%;
+	margin-left: 37%;
+	padding-top: 5.5vh;
+	font-size: 3em;
 	font-weight: bold;
 }
 
 .fa-shopping-cart:before {
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 
 .panier {
+	display: flex;
 	width: 13%;
 	height: 26%;
 	float: right;
@@ -104,6 +108,90 @@ li {
 }
 
 .cart {
+	padding-top: 2.5%;
+	width: 30%;
+	margin-left: -7px;
 	text-decoration: none;
 	color: white;
+}
+
+.cart_text {
+	padding-top: 2.5%;
+	width: 70%;
+	color: white;
+	font-size: 1em;
+}
+
+.cart_link {
+	color: white;
+}
+
+/* TIMER BANNER */
+
+.timer {
+	display: flex;
+	justify-content: center;
+	height: 10vh;
+	width: 315px;
+	margin-left: auto;
+	margin-right: auto;
+	color: rgba(50, 215, 212, 0.75);
+	background-color: rgb(22, 92, 164);
+}
+
+.clock_conteneur {
+	width: 15%;
+	height: 100%;
+}
+
+.fa-clock-o:before {
+	font-size: 3.5em;
+	line-height: 10vh;
+	margin-left: 30%;
+}
+
+.timer_conteneur {
+	width: 85%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+}
+
+.time_left {
+	font-size: 1.5em;
+	padding-top: 5px;
+	padding-left: 16px;
+	justify-content: center;
+}
+
+.hour {
+	padding-left: 16px;
+		font-size: 3em;
+}
+
+/* NOUVEAUX DESIGNES */
+
+.new_designs {
+	display: flex;
+	margin-top: 7vh;
+	background-color: rgb(156, 211, 244);
+	width: 90%;
+	height: 50vh;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.new_cases {
+	width: 20%;
+	float: left;
+}
+
+.price {
+
+}
+
+.buy {
+
 }
