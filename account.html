@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/animate.css" media="screen">
+  <link rel="stylesheet" href="./css/font-awesome-4.6.1/css/font-awesome.css" media="screen">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" media="screen">
+  <title>PTWEB3</title>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li> <a href="./index.html" class="menu_button">Accueil</a></li>
+        <li><a href="./votes.html" class="menu_button">Votes</a></li>
+        <li><a href="./contact.html" class="menu_button">Contact</a></li>
+        <div class="circle"><a href="./account.html"><li class="fa fa-user"></li></a></div>
+        <a href="./upload.html"><li class="fa fa-upload"></li></a>
+      </ul>
+    </nav>
+
+    <div class="panier">
+     <div class="cart"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> </div>
+     <div class="cart_text"> <a href="./panier.html" class="cart_link"> Mon Panier </a></div>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="infoperso">
+      <div class="titre">Infos Persos</div>
+      <form>
+          <input type="text" name="nom" placeholder="Nom" /><br />
+          <input type="text" name="prenom" placeholder="Prénom" /><br />
+          <input type="text" name="adresse1" placeholder="Adresse 1" /><br />
+          <input type="text" name="adresse2" placeholder="Adresse 2" /><br />
+          <input type="text" name="ville" placeholder="Ville" /><br />
+          <input type="text" name="codepostal" placeholder="Code Postal" /><br />
+          <select name="pays">
+             <option value="fra">France</option>
+             <option value="deu">Deutschland</option>
+             <option value="uk">England</option>
+             <option value="usa">America</option>
+          </select></br>
+          <input type="submit" value="Modifier" />
+      </form>
+    </div>
+
+    <div class="titre">Historique</div>
+    <div class="titre">Derniers Votes</div>
+  </main>
+
+
+
+  <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
