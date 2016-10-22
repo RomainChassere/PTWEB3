@@ -46,7 +46,7 @@ a {
 	color: #EEEEEE;
 	padding: 10px;
 	margin: 2vh 10px;
-	width: 15%;						/* Petit soucis de largeur, à revoir */
+	width: 20%;						/* Petit soucis de largeur, à revoir */
 	border-radius: 10px;
 	font-size: 2em;
 	font-style: uppercase;
@@ -246,4 +246,52 @@ li {
 	font-size: 1.5em;
 	font-family: inherit;
 	color: #EEEEEE;
+}
+
+/* HISTORIQUE */
+
+.historique {
+	width: 50%;
+	text-align: center;
+	position: absolute;
+	top: 100px;
+	left: 600px;
+}
+
+.historique .titre {
+	margin: 20px auto;
+}
+
+.historique .intitule {
+	border-style: solid;
+	border-width: 0 0 8px;
+	border-image: url(../img/coolborder.png) 0 0 8 stretch;
+	font-size: 1.5em;
+	font-family: inherit;
+	margin: 10px;
+	text-transform: uppercase;
+}
+
+/* DERNIERS VOTES */
+
+.derniervote {
+	position: absolute;
+	left: 800px;
+	top: 400px;
+}
+
+.derniervote .titre {
+	width: 300px;
+	margin: 20px auto;
+}
+
+.derniervote .wraplastvote {
+	display: flex;
+	background-color: grey;
+	justify-content: center;
+	padding: 50px;
+}
+
+.derniervote .lastdesignvoted {
+	margin: 10px;
 }
