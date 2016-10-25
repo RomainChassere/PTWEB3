@@ -45,8 +45,131 @@ a {
 
 
 /* MENU */
+header /* pour le sticky menu */ {
+	height: 8vh;
+}
+
+@import "compass/css3";
+
+.hovicon {
+    display: inline-block;
+    font-size: 45px;
+    line-height: 90px;
+    cursor: pointer;
+    margin: 20px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+    color: #fff;
+}
+.hovicon.small {
+    font-size: 20px;
+    line-height:45px;
+    width:45px;
+    height:45px;
+    margin:7px;
+}
+.hovicon.mini {
+    font-size: 15px;
+    line-height:32px;
+    width:30px;
+    height:30px;
+    margin:7px;
+}
+.hovicon.auto-width {
+    width: auto;
+    height: auto;
+    padding: 15px;
+}
+.hovicon:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content:'';
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.hovicon:before {
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+}
+/* Effect 1 */
+ .hovicon.effect-1 {
+    background: rgb(22, 92, 164);;
+    -webkit-transition: background 0.2s, color 0.2s;
+    -moz-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;
+}
+.hovicon.effect-1:after {
+    top: -7px;
+    left: -7px;
+    padding: 7px;
+    box-shadow: 0 0 0 4px rgb(22, 92, 164);
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -webkit-transform: scale(.8);
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    transition: transform 0.2s, opacity 0.2s;
+    transform: scale(.8);
+    opacity: 0;
+}
+/* Effect 1a */
+ .hovicon.effect-1.sub-a:hover {
+    background: white;
+    color: white;
+}
+.hovicon.effect-1.sub-a:hover i {
+    color: white;
+}
+.hovicon.effect-1.sub-a:hover:after {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+/* Effect 1b */
+ .hovicon.effect-1.sub-b:hover {
+    background: rgba(255, 255, 255, 1);
+    color: white;
+}
+.hovicon.effect-1.sub-b:hover i {
+    color: white;
+}
+.hovicon.effect-1.sub-b:after {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.hovicon.effect-1.sub-b:hover:after {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+.fixed {
+	top: 0;
+	position: fixed;
+}
+
 nav {
-	background-color: rgba(50, 215, 212, 0.75);
+	background-color: rgb(106, 226, 237);
 	width: 100%;
 }
 
@@ -75,6 +198,22 @@ li {
 	color: rgb(22, 92, 164);
 }
 
+.circle {
+	background-color: rgb(22, 92, 164);
+	border-radius: 60px;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+}
+
+.circle .fa-user:before, .circle .fa-upload:before {
+	color: white;
+	line-height: 60px;
+	font-size: 2.5em;
+}
+
+/* ACCUEIL */
+
 /* BANNIERE PROMO */
 
 .promo {
@@ -99,7 +238,8 @@ li {
 .panier {
 	display: flex;
 	width: 13%;
-	height: 26%;
+	height: 40%;
+	padding-bottom: 10px;
 	float: right;
 	color: white;
 	text-align: center;
@@ -109,7 +249,7 @@ li {
 
 .cart {
 	padding-top: 2.5%;
-	width: 40%;
+	width: 30%;
 	margin-left: -7px;
 	text-decoration: none;
 	color: white;
@@ -125,6 +265,31 @@ li {
 .cart_link {
 	color: white;
 }
+
+
+/* BANNIERE PROMO */
+
+.promo {
+	width: 100%;
+	background-color: rgb(250, 145, 94);
+	height: 22vh;
+}
+
+.promo_text {
+	color: rgb(22, 92, 164);
+	width: 41%;
+	margin-left: 37%;
+	padding-top: 5.5vh;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+@media (max-width: 800px) {
+	.promo_text {
+		font-size: 2.2em;
+	}
+}
+
 
 /* TIMER BANNER */
 
@@ -176,22 +341,110 @@ li {
 .new_designs {
 	display: flex;
 	margin-top: 7vh;
-	background-color: rgb(156, 211, 244);
-	width: 90%;
+	background-color: rgba(156, 211, 244, 0.5);
+	width: 83%;
 	height: 50vh;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .new_cases {
-	width: 20%;
-	float: left;
+	display: flex;
+	width: 50%;
+	align-items: center;
+	justify-content: center;
 }
 
 .price {
-
+	background-color: rgb(22, 92, 164);
+	width: 40px;
+	height: 40px;
+	border-radius: 12px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 1.5em;
+	color: white;
+	cursor: pointer;
 }
 
 .buy {
+	background-color: rgb(22, 92, 164);
+	width: 65px;
+	border-radius: 12px;
+}
 
+.white:before {
+	cursor: pointer;
+	padding-left: 7px;
+	color: white;
+}
+
+
+/* VOTES */
+.newline /*Nouvelle ligne de 4 case */ {
+	margin-top: 140px;
+	display: flex;
+	width: 100%;
+	height: 600px;
+	margin-left: 5.8%;
+}
+
+.new_case {
+	width: 25%;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+
+.case_info /*photo + texte */ {
+
+ width: 320px;
+ color: rgb(22, 92, 164);
+}
+
+.descrip {
+	float: right;
+}
+
+.name {
+	float: left;
+	text-align: center;
+	font-size: 1.2em;
+	line-height: 108px;
+}
+
+.case_name {
+	display: flex;
+	font-size: 2em;
+	font-weight: 700;
+	text-align: center;
+	padding-bottom: 10px;
+	margin-top: 20px;
+}
+
+.like {
+	width:54%;
+}
+.fa-thumbs-up{
+	background-color: rgb(22, 92, 164);
+	width: 60px;
+	height: 60px;
+	border-radius: 12px;
+	text-align: center;
+	float: right;
+	line-height: 60px;
+	font-size: 2.3em;
+	color: white;
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+.blue {
+	color: rgb(22, 92, 164);
+}
+.white {
+	background-color: white;
 }
