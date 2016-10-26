@@ -19,16 +19,20 @@ $( document ).ready(function() {
     }
   });
 
-  $('#like').on("mouseover", function() {
+  /* $('#like').on("mouseover", function() {
     console.log('OUI');
     $('#like').addClass('animated pulse');
     $('#pouce').addClass('white');
-    $('#pouce').addClass('blue'); 
-  });
+    $('#pouce').addClass('blue');
+  }); hovicon effect-1 sub-a*/
 
   $('#fa-upload').on("mouseover", function() {
-    console.log('OUI200');
     $('#fa-upload').addClass('animated bounce');
   });
+
+  $('#white_cart').on("mouseover", function() {
+    $(this).addClass('animated tada');
+  });
+
 
   });

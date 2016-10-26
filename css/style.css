@@ -35,6 +35,7 @@ div, header, footer, aside, section {
 
 body {
 	font-family: 'Exo 2', sans-serif;
+	width: 100%;
 }
 
 a {
@@ -53,12 +54,7 @@ header /* pour le sticky menu */ {
 
 .hovicon {
     display: inline-block;
-    font-size: 45px;
-    line-height: 90px;
-    cursor: pointer;
-    margin: 20px;
-    width: 90px;
-    height: 90px;
+
     border-radius: 50%;
     text-align: center;
     position: relative;
@@ -67,23 +63,14 @@ header /* pour le sticky menu */ {
     color: #fff;
 }
 .hovicon.small {
-    font-size: 20px;
-    line-height:45px;
-    width:45px;
-    height:45px;
-    margin:7px;
+
 }
 .hovicon.mini {
-    font-size: 15px;
-    line-height:32px;
-    width:30px;
-    height:30px;
-    margin:7px;
+
 }
 .hovicon.auto-width {
     width: auto;
     height: auto;
-    padding: 15px;
 }
 .hovicon:after {
     pointer-events: none;
@@ -171,10 +158,11 @@ header /* pour le sticky menu */ {
 nav {
 	background-color: rgb(106, 226, 237);
 	width: 100%;
+	height: 80px;
 }
 
 ul {
-	height: 8vh;
+	height: 80px;
 	width: 83%;
 	margin: auto;
 	text-decoration: none;
@@ -185,8 +173,16 @@ ul {
 }
 
 li {
-	font-size: 3em;
+	font-size: 2.5em;
+	font-weight: 700;
 	list-style-type: none;
+}
+
+.li_over:hover {
+  border-top: 1px solid rgb(22, 92, 164);
+  border-bottom: 1px solid rgb(22, 92, 164);
+  padding: 5px 0;
+	transition: 0.4s ease;
 }
 
 .menu_button {
@@ -206,28 +202,41 @@ li {
 	text-align: center;
 }
 
+
 .circle .fa-user:before, .circle .fa-upload:before {
 	color: white;
 	line-height: 60px;
 	font-size: 2.5em;
 }
 
+
+.circle:hover {
+	background-color: rgb(250, 145, 94);
+	transition: 0.3s linear;
+}
+
 /* ACCUEIL */
 
 /* BANNIERE PROMO */
-
 .promo {
 	width: 100%;
 	background-color: rgb(250, 145, 94);
 	height: 22vh;
 }
 
+.promo_content {
+	width: 55%;
+	margin-left: 20%;
+}
+
+.promo_pic{
+	float: left;
+}
+
 .promo_text {
 	color: rgb(22, 92, 164);
-	width: 41%;
-	margin-left: 37%;
-	padding-top: 5.5vh;
-	font-size: 3em;
+	height: 22vh;
+	font-size: 2.5em;
 	font-weight: bold;
 }
 
@@ -235,10 +244,12 @@ li {
 	font-size: 1.2em;
 }
 
+/* BOUTON PANIER */
+
 .panier {
 	display: flex;
-	width: 13%;
-	height: 40%;
+	width: 250px;
+	height:54px;
 	padding-bottom: 10px;
 	float: right;
 	color: white;
@@ -248,7 +259,7 @@ li {
 }
 
 .cart {
-	padding-top: 2.5%;
+	padding-top: 6px;
 	width: 30%;
 	margin-left: -7px;
 	text-decoration: none;
@@ -256,7 +267,7 @@ li {
 }
 
 .cart_text {
-	padding-top: 2.5%;
+	padding-top: 6.5px;
 	width: 70%;
 	color: white;
 	font-size: 1em;
@@ -269,20 +280,6 @@ li {
 
 /* BANNIERE PROMO */
 
-.promo {
-	width: 100%;
-	background-color: rgb(250, 145, 94);
-	height: 22vh;
-}
-
-.promo_text {
-	color: rgb(22, 92, 164);
-	width: 41%;
-	margin-left: 37%;
-	padding-top: 5.5vh;
-	font-size: 3em;
-	font-weight: bold;
-}
 
 @media (max-width: 800px) {
 	.promo_text {
@@ -296,7 +293,7 @@ li {
 .timer {
 	display: flex;
 	justify-content: center;
-	height: 10vh;
+	height: 100px;
 	width: 315px;
 	margin-left: auto;
 	margin-right: auto;
@@ -340,7 +337,7 @@ li {
 
 .new_designs {
 	display: flex;
-	margin-top: 7vh;
+	margin-top: 175px;
 	background-color: rgba(156, 211, 244, 0.5);
 	width: 83%;
 	height: 50vh;
@@ -357,23 +354,30 @@ li {
 
 .price {
 	background-color: rgb(22, 92, 164);
-	width: 40px;
+	text-align: center;
+	width: 80px;
 	height: 40px;
 	border-radius: 12px;
 	text-align: center;
 	line-height: 40px;
-	font-size: 1.5em;
+	font-size: 1.7em;
 	color: white;
-	cursor: pointer;
+	margin-top: -590px;
 }
 
 .buy {
 	background-color: rgb(22, 92, 164);
 	width: 65px;
+	height: 50px;
 	border-radius: 12px;
+	margin-top: 590px;
 }
 
-.white:before {
+.white_cart:before {
+	text-align: center;
+	margin-left: 5px;
+	line-height: 50px;
+	font-size: 2.5em;
 	cursor: pointer;
 	padding-left: 7px;
 	color: white;
@@ -384,13 +388,13 @@ li {
 .newline /*Nouvelle ligne de 4 case */ {
 	margin-top: 140px;
 	display: flex;
-	width: 100%;
+	width: 90%;
 	height: 600px;
-	margin-left: 5.8%;
+	margin-left: 8%;
 }
 
 .new_case {
-	width: 25%;
+	width: 28%;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
@@ -398,7 +402,6 @@ li {
 
 
 .case_info /*photo + texte */ {
-
  width: 320px;
  color: rgb(22, 92, 164);
 }
@@ -424,19 +427,30 @@ li {
 }
 
 .like {
-	width:54%;
+	margin-top: 10px;
 }
+
+
+.fa-thumbs-up:hover{
+	 color: rgb(22, 92, 164);
+		background-color: white;
+		border-radius: 15px;
+		border: 2px solid rgb(22, 92, 164);
+		transition: 0.2s linear;
+}
+
 .fa-thumbs-up{
 	background-color: rgb(22, 92, 164);
 	width: 60px;
 	height: 60px;
 	border-radius: 12px;
 	text-align: center;
-	float: right;
+	margin-left: 250px;
 	line-height: 60px;
 	font-size: 2.3em;
 	color: white;
 	cursor: pointer;
+	overflow: hidden;
 }
 
 .hidden {
