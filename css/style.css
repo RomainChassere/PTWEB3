@@ -31,7 +31,9 @@ div, header, footer, aside, section {
   box-sizing: border-box;
 }
 
-/* GENERAL STYLES */
+
+/* ////////// GENERAL STYLES ///////// */
+
 
 body {
 	font-family: 'Exo 2', sans-serif;
@@ -100,7 +102,9 @@ li {
 	font-size: 2.5em;
 }
 
-/* ACCUEIL */
+
+/* /////////// ACCUEIL /////////// */
+
 
 /* BANNIERE PROMO */
 
@@ -223,7 +227,9 @@ li {
 
 }
 
-/* CONTACT */
+
+/* /////////// CONTACT /////////// */
+
 
 /* INFOS SITE */
 
@@ -260,7 +266,9 @@ li {
 
 /* FAQ */
 
-/* ACCOUNT */
+
+/* /////////// ACCOUNT /////////// */
+
 
 /* INFOS PERSOS */
 
@@ -344,4 +352,18 @@ li {
 
 .derniervote .lastdesignvoted {
 	margin: 10px;
+}
+
+
+/* /////////// PANIER /////////// */
+
+
+/* VOTRE PANIER */
+
+/* PANIER INFOS PERSOS */
+
+.panier_infoperso {
+	position: absolute;
+	left: 50%;
+	background-color: red;
 }
