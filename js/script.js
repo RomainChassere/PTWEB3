@@ -19,6 +19,7 @@ $( document ).ready(function() {
     }
   });
 
+<<<<<<< HEAD
   $('#like').on("mouseover", function() {
     console.log('OUI');
     $('#like').addClass('animated pulse');
@@ -31,4 +32,22 @@ $( document ).ready(function() {
     $('#fa-upload').addClass('animated bounce');
   });
 
+=======
+  /* $('#like').on("mouseover", function() {
+    console.log('OUI');
+    $('#like').addClass('animated pulse');
+    $('#pouce').addClass('white');
+    $('#pouce').addClass('blue');
+  }); hovicon effect-1 sub-a*/
+
+  $('#fa-upload').on("mouseover", function() {
+    $('#fa-upload').addClass('animated bounce');
+  });
+
+  $('#white_cart').on("mouseover", function() {
+    $(this).addClass('animated tada');
+  });
+
+
+>>>>>>> origin/master
   });
